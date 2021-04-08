@@ -29,14 +29,14 @@ public class Main {
 			return 0;
 		}
 	}
-	static int ELEMENTOS_POBLACION = 100;
+	static int ELEMENTOS_POBLACION = 500;
 	static int ELEMENTOS_ELITE = (int) (ELEMENTOS_POBLACION*0.1); //10% de la poblacion
-	static final int MAX_ITERACIONES = 20000;
+	static final int MAX_ITERACIONES = 10000;
 	static final int PROBABILIDAD_MUTACION = 50; //en porcentaje
 	static Cromosoma[] cromosomas = new Cromosoma[ELEMENTOS_POBLACION]; //poblacion principal
 	static Cromosoma[] sgteGeneracion = new Cromosoma[ELEMENTOS_ELITE]; //un hijo por cada elite
 	static Cromosoma[] poblacionMasHijos = new Cromosoma[ELEMENTOS_POBLACION + ELEMENTOS_ELITE]; //juntamos las generaciones para eveluarlas
-	static final String cadena = "Cadena de treinta caracteres.."; //string objetivo
+	static final String cadena = "esta es la cadena char objetivo"; //string objetivo
 	static final int longitudCadena = cadena.length();
 	static int cantidadPruebas = 1;
 
